@@ -1,0 +1,20 @@
+trutest_distributor_dealer.admin_settings:
+  title: 'Distributor/Dealer'
+  description: 'Import Dealers and Distributors, Configuration settings for import'
+  route_name: distributor_dealer.settings
+  parent: 'system.admin_config_development'
+trutest_distributor_dealer.admin_settings_link:
+  title: 'Distributor/Dealer'
+  description: 'Configuration settings for import.'
+  route_name: distributor_dealer.settings
+  menu_name: DealerDistributor
+trutest_distributor_dealer.distributor_import:
+  title: 'Distributor Import'
+  description: 'Follow this link to import Distributors'
+  route_name: distributor_dealer.distributor_import
+  menu_name: DealerDistributor
+trutest_distributor_dealer.dealer_import:
+  title: 'Dealer Import'
+  description: 'Follow this link to import dealers.'
+  route_name: distributor_dealer.dealer_import
+  menu_name: DealerDistributor  

@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Installation configurations for module.
+ * 
+ * Installing node types for Distributors and dealers.
+ */
+
+/**
+ * hook_uninstall()
+ * 
+ * This will prevent the error that will give on reinstalling the module
+ * 'distributor_dealer.settings already exsits in active configuration'
+ * 
+*/
+function trutest_distributor_dealer_uninstall()
+{
+   
+   Drupal::configFactory()->getEditable('distributor_dealer.settings')->delete(); 
+}
+
+/**
+ * hook_install()
+ * 
+ * The message to configure the brand
+ */
+
+function trutest_distributor_dealer_install()
+{
+    $configurlpath = Drupal\Core\Url::fromRoute('distributor_dealer.settings');
+    drupal_set_message(t('Please Update the Brand in the configuration. It is a must to <a href="/@url">configure</a> this before the import.',['@url'=>$configurlpath->getInternalPath()]),'warning');
+    
+}

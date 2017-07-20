@@ -1,0 +1,9 @@
+name: Tru-Test Distributor and Dealer
+description: Creates the environment to update the Distributor and Dealer list. You need to upload the files trough ftp first and then change the file path in configuration if needed.
+package: Tru-test
+
+type: module
+configure: distributor_dealer.settings
+dependencies:
+    - block
+core: 8.x

@@ -1,0 +1,4 @@
+importfilePath:
+  distributor: 'sites/default/files/trutest_distributor/import/distributor_import.tsv'
+  dealer: 'sites/default/files/trutest_dealers/import/dealer_import.tsv'
+brand_selection_coloumn: ''

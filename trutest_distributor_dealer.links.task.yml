@@ -1,0 +1,14 @@
+distributor_dealer.settings  : # The first plugin ID
+  route_name: distributor_dealer.settings  
+  title: 'Settings'
+  base_route: distributor_dealer.settings
+distributor_dealer.distributor_import: # The second plugin ID
+  route_name: distributor_dealer.distributor_import
+  title: 'Import Distributors'
+  base_route: distributor_dealer.settings
+  weight: 100
+distributor_dealer.dealer_import: # The thrid plugin ID
+  route_name: distributor_dealer.dealer_import
+  title: 'Import Dealers'
+  base_route: distributor_dealer.settings
+  weight: 101  

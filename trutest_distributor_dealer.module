@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * 
+ * hook_help()
+ */
+
+function trutest_distributor_dealer_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match)
+{
+        switch ($route_name) {
+            case "help.page.trutest_distributor_dealer":
+              return t('<a href="@tt_url">Tru-Test Distributors</a> is a custom distributor module built in Drupal based on Tru-Test Group JDE Distributors Address Data. Please contact Help Desk @ Tru-Test Group for more information.
+			   Also create the following:<br/>
+			  <ol>
+                           <li>Node Type : Distributor (distributor)</li>
+			   <li>Fields :</li>
+                           <ul>
+			   	<li>a.	JDE Rep Name  (field_jde_rep_name)</li>
+				<li>b.	JDE Addr Nbr  (field_jde_addr_nbr)</li>
+				<li>c.	JDE Addr Type (field_jde_addr_type)</li>
+				<li>d.	JDE Web Region  (field_jde_province)</li>
+				<li>e.	JDE Brand Milkmeters  (field_jde_brand_milkmeters)</li>
+				<li>f.	JDE Brand StockManagement  (field_jde_brand_stockmanagement)</li>
+				<li>g.	JDE Brand Speedrite  (field_jde_brand_speedrite)</li>
+				<li>h.	JDE Brand Stafix  (field_jde_brand_stafix)</li>
+				<li>i.	JDE Brand PEL  (field_jde_brand_pel)</li>
+				<li>j.	JDE Brand Trutestgroup  (field_jde_brand_trutestgroup)</li>
+				<li>k.	JDE Brand Hayes  (field_jde_brand_hayes)</li>
+				<li>l.	JDE Brand Patriot  (field_jde_brand_patriot)</li>
+				<li>m.	JDE Date Updated  (field_jde_date_updated)</li>  
+                            </ul>', array('@tt_url' => 'http://www.tru-test.com/'));
+              break;
+          }
+}

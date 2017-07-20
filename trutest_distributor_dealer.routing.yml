@@ -1,0 +1,32 @@
+distributor_dealer.settings:
+  path: '/admin/config/distributor_dealer/import'
+  defaults:
+    _form: '\Drupal\trutest_distributor_dealer\Form\DistributorDealerImportConfigForm'
+    _title: 'Tru-test Distributor Dealer import'
+  requirements:
+    _permission: 'administer site configuration'     
+
+distributor_dealer.distributor_import:
+  path: '/admin/distributor/import'
+  defaults:
+    _form: '\Drupal\trutest_distributor_dealer\Form\DistributorImportForm'
+    _title: 'Tru-test Distributor Import'
+  requirements:
+    _permission: 'administer site configuration'
+    
+distributor_dealer.dealer_import:
+  path: '/admin/dealer/import'
+  defaults:
+    _form: '\Drupal\trutest_distributor_dealer\Form\DealerImportForm'
+    _title: 'Tru-test Distributor Import'
+  requirements:
+    _permission: 'administer site configuration'    
+
+contact.country:
+  path: '/contact/{country}/distributors_dealers'
+  defaults:
+    _form: '\Drupal\trutest_distributor_dealer\Form\DistributorDealerCountrySelectForm'
+    _title: 'Contact Us'
+  requirements:
+    _permission: 'access content'
+    eid: ^[0-9]+
